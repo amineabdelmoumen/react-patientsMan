@@ -1,38 +1,52 @@
-.App {
+main {
+  margin-top: 60px;
+}
+
+form {
+  width: 350px;
+  margin-bottom: 10px;
+}
+.form input {
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(76, 78, 78);
+}
+.form .title {
   text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.form .input:focus {
+  background-color: white;
+  outline: rgb(201, 236, 248);
+}
+.form .input::placeholder {
+  font-size: 10px;
+  color: rgb(127, 138, 141);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control::-webkit-input-placeholder {
+  color: rgb(13, 231, 195);
+}
+.form-control::-webkit-input-focus {
+  color: rgb(13, 231, 42);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#component {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-70%, -70%, -30);
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#completedTaskList .content {
+  color: grey;
+  text-decoration: line-through;
 }

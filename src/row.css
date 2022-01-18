@@ -1,0 +1,58 @@
+.container {
+  margin-top: 15px;
+  height: 70%;
+  left: 70%;
+}
+#table {
+  position: absolute;
+  margin-top: 10px;
+}
+button {
+  margin-left: 340px;
+  margin-top: 20px;
+}
+input:focus {
+  background-color: lightblue;
+  border: 3px solid brown;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(13, 231, 195);
+}
+.form-control::-webkit-input-focus {
+  color: rgb(13, 231, 42);
+}
+body {
+  background-color: rgb(205, 206, 211);
+  color: rgb(19, 18, 18);
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -95%);
+  border: 1px solid rgb(224, 221, 221);
+  padding: 30px 100px;
+  background-color: rgb(193, 229, 241);
+}
+.form input {
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(76, 78, 78);
+}
+.form .title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.form .input:focus {
+  background-color: white;
+  outline: rgb(201, 236, 248);
+}
+.form .input::placeholder {
+  font-size: 10px;
+  color: rgb(127, 138, 141);
+}
